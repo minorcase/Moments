@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Moments</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="http://learning-fuze.github.io/hackathon/api-obj.js"></script>
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/css/ripples.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFXSBQkCOBaFDldoxSNn3w22PscDJCfwQ"></script>
+
+
+
+    <!--Main Stylesheet-->
+    <link href = 'style.css' rel= 'stylesheet' type = 'text/css'>
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div class = 'nav-container'>
+            <div class = 'nav-head'>
+                <a onmouseover="ramrod()" class = 'navbar-brand'>R<div class = 'text_one'></div>R<div class = 'text_two'></div>E<div class = "text_three"></div></a>
+            </div>
+            <div class = "nav-list">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a onclick = "home_slide()">Search</a></li>
+                    <li><a href="play.html">Play</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div onmouseover="ramrod_leave()" id = 'home_page' class = 'landing_container'>
+        <div class = 'landing_welcome' onclick="dropdown()"><h1>Choose Your Experience</h1></div>
+    </div>
+    <div onmouseover="ramrod_leave()" id = 'main_page' class = 'landing_container'>
+        <div class = 'music_content col-md-10 col-sm-12'>
+
+            <div class="youtube_container">
+
+                <div id = 'speaker_left' class="col-lg-1 col-md-1 hidden-xs hidden-sm speaker">
+                    <div class = 'speaker_hole'></div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 youtube"><div id="ytplayer"></div></div>
+                <div id = 'speaker_right' class="col-lg-1 col-md-1 hidden-xs hidden-sm speaker">
+                    <div class = 'speaker_hole'></div>
+                </div>
+            </div>
+            <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
+
+                <a  href = 'javascript:void(0)' class = 'btn ' onclick="rick_roll()" data-toggle="modal" data-target=".rick_roll" >Tour
+                    <div class = 'ripple-container'></div>
+                </a>
+                <a href = 'javascript:void(0)' class = 'btn ' onclick="nickleback()" data-toggle="modal" data-target=".bs-example-modal-lg">Artist
+                    <div class = 'ripple-container'></div>
+                </a>
+
+                <a href = 'javascript:void(0)' class = 'btn ' data-toggle="modal" data-target="#myModal" onclick="load_google()">Venue
+                    <div class = 'ripple-container'></div>
+                </a>
+            </div>
+            <div class = "tour_holder">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+
+                        </div>
+
+                        <div class="item">
+
+                        </div>
+
+                        <div class="item">
+
+                        </div>
+
+                        <div class="item">
+
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = 'twitter_feed col-md-2 hidden-xs'></div>
+    </div>
+
+    <!--Modal Start-->
+    <div class="container">
+        <h2>Concert Venue</h2>
+        <!-- Trigger the modal with a button -->
+
+        <!-- Modal -->
+        <div class="modal fade modal-lg" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">ATT Stadium</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-map">
+                            <div id="map2"></div>
+                            <div id="pano2"></div>
+                            <div><a href="https://www.google.com/maps/place/AT%26T+Stadium/@32.7472844,-97.0966879,17z/data=!3m1!4b1!4m5!3m4!1s0x864e7d86c8884727:0x6d1e60e88c6a9df8!8m2!3d32.7472844!4d-97.0944939" target="_blank"><button id="mod-button">Click for Directions</button></a></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-raised" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal End-->
+    <!--Tour Info-->
+    <div class="modal fade rick_roll monk" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class='modal-title text-capitalize col-md-offset-4'>Epic</h1>
+                </div>
+                <div class="modal-body">
+                    <div id="rick_roll">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="remove_the_grump()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Artist Modal-->
+    <div class="modal fade bs-example-modal-lg monk" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class='modal-title text-capitalize col-md-offset-4'>Look at this graph</h1>
+                </div>
+                <div class="modal-body">
+                    <div id="vine-player"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="remove_the_back()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/js/ripples.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/js/material.min.js"></script>
+    <script>
+        $.material.ripples(".btn , .landing_welcome, .speaker_grow");
+    </script>
+</body>
+</html>

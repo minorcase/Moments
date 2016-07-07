@@ -1,0 +1,400 @@
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#nav-bar {
+    background: #212121;
+    height: 7%;
+    width: 100%;
+}
+
+.navbar-brand div {
+    display: inline-block;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin-right: 5%;
+    float: right;
+}
+
+.landing_container {
+    position: relative;
+    height: 93%;
+    width: 100%;
+}
+
+#home_page {
+    background: linear-gradient(rgba(255,255,255,.15),rgba(255,255,255,.25)),url('images/hollywood-bowl-cropped.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.landing_welcome > h1 {
+    cursor: default;
+    font-size: 2em;
+}
+
+.landing_welcome {
+    height: 10vh;
+    width: 43vw;
+    border: 3px solid black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-45%,-45%);
+}
+
+.landing_welcome h1 {
+    text-align: center;
+    position: relative;
+    top: 25%;
+    transform: translateY(-45%);
+    cursor: default;
+}
+
+.youtube_container {
+    height: 50%;
+    width: 100%;
+    border: none;
+}
+
+.speaker,
+.youtube {
+    background: #424242;
+    height: 100%;
+    padding: 0;
+}
+
+.speaker {
+    position: relative;
+}
+
+.music_content {
+    height: 100%;
+}
+
+.twitter_feed {
+    height: 100%;
+    background: #E0E0E0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.col-md-9,
+.col-md-3,
+.col-md-10,
+.twitter_feed {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.modal_button_container {
+    height: 10%;
+    width: 100%;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.button {
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.tour_holder {
+    height: 40%;
+    width: 100%;
+}
+
+.modal_button {
+    height: 90%;
+    width: 40%;
+}
+
+#ytplayer {
+    height: 100%;
+    width: 100%;
+}
+
+#map2 {
+    float: left;
+    height: 95%;
+    width: 45%;
+    padding: 5%;
+}
+#pano2 {
+    float: right;
+    height: 95%;
+    width: 45%;
+    padding: 5%;
+}
+#modal-map {
+    height: 60vh;
+}
+#mod-button {
+    clear: both;
+}
+.modal-title{
+    text-align: center;
+}
+.beyonce {
+    width: 50%;
+    height: 50%;
+    clear: both;
+}
+
+.twitter_card {
+    position: absolute;
+    background: #FAFAFA;
+    height: 40%;
+    width: 90%;
+    left: 45%;
+    transform: translateX(-45%);
+    box-shadow: 10px 10px 5px #888888;
+    overflow: hidden;
+}
+
+.tweet_text {
+    width: 90%;
+    height: 40%;
+    font-size: 1em;
+    color: black;
+    margin: 10% 0 5% 3%;
+}
+.tweet_user_name,
+.tweet_date {
+    color: blue;
+    font-size: 1em;
+    font-weight: 500;
+    width: 40%;
+    height: 10%;
+    margin: 3% 3%;
+}
+
+.tweet_icon {
+    float: right;
+    margin: 17% 3% 0 0;
+}
+
+.tweet_user_name:first-letter {
+    color: black;
+}
+
+.tweet_user_pic,
+.tweet_user_name {
+    margin: 3%;
+    display: inline-block;
+}
+
+.btn-group-raised .btn {
+    background-color: #757575;
+    color: #ffffff;
+}
+
+.btn-group-raised .btn:not(.btn-link):active,
+.btn-group-raised .btn:not(.btn-link):hover,
+.btn-group-raised .btn:not(.btn-link):focus {
+    background: #BDBDBD;
+    color: #000000
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .item {
+    height: 40vh;
+    background: #212121;
+}
+
+.speaker_hole {
+    height: 8%;
+    width: 28%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translateX(-45%);
+    background: #212121;
+}
+
+.speaker_grow {
+    background: #E0E0E0;
+}
+
+.speaker_animate {
+    z-index: +1;
+    background: #212121;
+}
+
+.artist_list {
+    text-align: center;
+    position: relative;
+    top: 46%;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 36px;
+    background: none;
+    transform: translateY(-45%);
+    visibility: visible;
+}
+
+.tour_date{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.speaker_glyph {
+    color: white;
+    position: relative;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%,-45%);
+}
+
+/*
+.speaker_pulse {
+    height: 5%;
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translateX(-45%);
+    background: #ffffff;
+}
+*/
+.nav-list> ul > li  {
+    cursor: default;
+}
+
+
+.tour_div {
+    color: white;
+    font-size: 2em;
+}
+
+.tour_div div:first-child {
+    position: relative;
+    top: 15%;
+    transform: translateY(-15%);
+}
+
+.tour_div div:nth-child(2) {
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+}
+
+.tour_div div:nth-child(3) {
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+}
+
+::-webkit-input-placeholder {
+    font-size: 50%;
+    color: #212121;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 50%;
+    color: #212121;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 50%;
+    color: #212121;
+}
+
+:-ms-input-placeholder {
+    font-size: 50%;
+    color: #212121;
+}
+.loader {
+    margin: 25%;
+    border-top: 26px solid cyan;
+    border-right: 26px solid pink;
+    border-bottom: 26px solid cyan;
+    border-left: 26px solid pink;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#vine-player {
+    padding-left: 17%;
+}
+#rick_roll {
+    margin-left: 25%;
+}
+
+.tweet_icon {
+    font-size: 2em;
+    color: black;
+    display: inline-block;
+    margin-left: 20%;
+
+}
+
+.drop_animate {
+    height: 10vh;
+    width: 43vw;
+    border: 3px solid black;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%,-45%);
+}
+
+@media screen and (max-width: 375px) {
+    .landing_welcome > h1 {
+        display: none;
+    }
+
+    #nav-bar {
+        z-index: +1;
+    }
+
+    .artist_list {
+        font-size: 1.3em;
+    }
+}
+#search-form, .form-control {
+    margin-bottom: 20px;
+}
+.cover {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-size: cover;
+}
+.cover:hover {
+    cursor: pointer;
+}
+.cover.playing {
+    border: 5px solid #e45343;
+}
