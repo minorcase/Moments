@@ -1,20 +1,7 @@
-# C8_Hackathon
-Hackathon project involving the combination of different data sources into an application or game
+Moments is a web application that allows users to relive their California concert experiences.
 
-### Requirements
-- Combine at least 3 **external** resources via AJAX requests and present their information in an application
-- Must be documented loosely on JSDOC standards
-- Must be issue-managed via a a service like <a href="https://www.zenhub.io/" target="_blank">zenhub for github</a>, <a href="https://trello.com/" target="_blank">trello</a>, <a href="https://www.meistertask.com" target="_blank">meistertask</a>, etc
-- Should encorporate <a href="https://www.google.com/design/spec/material-design/introduction.html" target="_blank">Google Material standards</a>
+It utilizes the Twitter, Google, Youtube, and bandsintown APIs to generate its content. Content is dynamically appended using Javascript and jQuery.
 
-### Judging Criteria
-- **Appeal** : is it visually appealing / well put together
-- **Code Quality** : is the code properly formatted, are variables and functions well defined and documented
-- **Presentation** : How well is it presented during the unveiling session
-- **Task / Issue Management** : How well was the development process documented / controlled.  Were there well-defined issues, milestones, and project management
-- **Innovative / Transformative** : Did the project do something new and exciting?  Was it bold and tried to do things that haven't been done much.  Did it combine the data sources together in a way that was more useful than either source by itself
-- **Ease of Use / Understanding** : Was it easy to use the application / game, or if it was more complex, was the application or game able to provide you with tutorials or instructions that made understanding it a breeze.
+If I had to do this project over again, I would love to flesh out the artist and tour information modals. This would be a little difficult to do as we were not able to find artist bios or tour information through any APIs.
 
-
-### Deadline: 
-- 5:00PM Friday, May 13th 2016
+I really enjoyed working on this project. I acted as the Project Manager and it was fun to have so many different types of responsibilities: helping others with issues, integrating separate chunks of code into one application, and designing wireframes with the group.
